@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import { twMerge } from "tailwind-merge";
 
 interface HeaderProps {
   children: React.ReactNode;
@@ -17,8 +18,7 @@ const Header: React.FC<HeaderProps> = ({
         //Handle logout in the future
     }
     return (
-        <div>
-            //
+        <div className={twMerge(`h-fit bg-gradient-to-b from-emerald-800 p-6`, className)}>
         </div>
     );
 }
