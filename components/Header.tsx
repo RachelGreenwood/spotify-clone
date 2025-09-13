@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { RxCaretLeft } from "react-icons/rx";
+import { RxCaretLeft, RxCaretRight } from "react-icons/rx";
 import { twMerge } from "tailwind-merge";
 
 interface HeaderProps {
@@ -24,6 +24,9 @@ const Header: React.FC<HeaderProps> = ({
                 <div className="hidden md:flex gap-x-2 items-center">
                     <button className="rounded-full bg-black flex items-center justify-center hover:opacity-75 transition">
                         <RxCaretLeft className="text-white" size={35} />
+                    </button>
+                    <button className="rounded-full bg-black flex items-center justify-center hover:opacity-75 transition">
+                        <RxCaretRight className="text-white" size={35} />
                     </button>
                 </div>
             </div>
