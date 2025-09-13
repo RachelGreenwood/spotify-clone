@@ -23,7 +23,7 @@ const Header: React.FC<HeaderProps> = ({
             <div className="w-full mb-4 flex items-center justify-between">
                 <div className="hidden md:flex gap-x-2 items-center">
                     <button>
-                        <RxCaretLeft />
+                        <RxCaretLeft className="text-white" size={35} />
                     </button>
                 </div>
             </div>
